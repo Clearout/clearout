@@ -58,15 +58,15 @@ export default class Nav extends Component {
 
 const Tabs = styled.div`
   overflow: hidden;
-  background-color: #fafafa;
-  border-bottom: 1px solid #d9d9d9;
-  padding-left: 40px;
+  width: 90%;
+  margin: 0 auto;
   flex-shrink: 0;
+  background-color: ${props => props.theme.background};
+  border-bottom: 1px solid #d9d9d9;
 `;
 const Tab = styled.button`
   font-family: Open Sans;
   background-color: inherit;
-  color: #008c72;
   float: left;
   border: none;
   box-shadow: none;
@@ -76,9 +76,12 @@ const Tab = styled.button`
   padding: 4px 3px;
   font-size: 15px;
   border-radius: 0;
+  color: ${props => props.theme.color};
+  border-bottom: ${props =>
+    props.active ? `3px solid ${props.theme.color}` : '0'};
+  font-weight: ${props => (props.active ? '600' : '400')};
   :hover {
-    background-color: #008c7212;
+    background-color: ${props => props.theme.active};
+    border-bottom: 3px solid ${props => props.theme.color};
   }
-  ${props => (props.active ? 'font-weight: 600' : 'font-weight: 400')};
-  ${props => (props.active ? 'border-bottom: 3px solid #008c72' : '0')};
 `;
