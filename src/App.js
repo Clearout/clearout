@@ -37,19 +37,24 @@ export default class App extends Component {
 }
 const themes = {
   light: {
-    color: '#000',
-    background: '#fff',
-    active: '#333'
+    color: '#484848',
+    background: '#f4f4f4',
+    active: '#888'
   },
   dark: {
-    color: '#eee',
-    background: '#000',
-    active: '#333'
+    color: '#ccc',
+    background: '#222',
+    active: '#454545'
   },
   sepia: {
-    color: '#333',
-    background: '#eee',
-    active: '#ddd'
+    color: '#483723',
+    background: '#e1c9a9',
+    active: '#ab8860'
+  },
+  pink: {
+    color: '#eee',
+    background: '#ff96a1',
+    active: '#ffc6d1'
   }
 };
 

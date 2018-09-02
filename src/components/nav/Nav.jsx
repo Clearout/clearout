@@ -62,7 +62,7 @@ const Tabs = styled.div`
   margin: 0 auto;
   flex-shrink: 0;
   background-color: ${props => props.theme.background};
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid ${props => props.theme.color};
 `;
 const Tab = styled.button`
   font-family: Open Sans;
@@ -74,12 +74,12 @@ const Tab = styled.button`
   cursor: pointer;
   width: 78px;
   padding: 4px 3px;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 0;
   color: ${props => props.theme.color};
   border-bottom: ${props =>
     props.active ? `3px solid ${props.theme.color}` : '0'};
-  font-weight: ${props => (props.active ? '600' : '400')};
+  font-weight: ${props => (props.active ? '600' : '500')};
   :hover {
     background-color: ${props => props.theme.active};
     border-bottom: 3px solid ${props => props.theme.color};

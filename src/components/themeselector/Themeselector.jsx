@@ -35,6 +35,7 @@ const Button = styled.button`
   word-wrap: break-word;
   :hover {
     background: ${props => props.theme.active};
+    cursor: pointer;
   }
   :focus {
     outline: 0;
